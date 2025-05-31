@@ -6,10 +6,17 @@ import { RevenueIntelligence } from '../components/RevenueIntelligence';
 import { RiskCompliance } from '../components/RiskCompliance';
 import { OperationalEfficiency } from '../components/OperationalEfficiency';
 import { StrategicDecisions } from '../components/StrategicDecisions';
+import { EnterpriseSolutions } from '../components/EnterpriseSolutions';
+import { Testimonials } from '../components/Testimonials';
+import { SecurityCertifications } from '../components/SecurityCertifications';
+import { EnterpriseIntegrations } from '../components/EnterpriseIntegrations';
+import { Footer } from '../components/Footer';
 import { FloatingCalculator } from '../components/FloatingCalculator';
+import { DemoModal } from '../components/DemoModal';
 
 const Index = () => {
   const [showCalculator, setShowCalculator] = useState(false);
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +36,13 @@ const Index = () => {
       <RiskCompliance />
       <OperationalEfficiency />
       <StrategicDecisions />
+      <EnterpriseSolutions />
+      <Testimonials />
+      <SecurityCertifications />
+      <EnterpriseIntegrations />
+      <Footer />
       {showCalculator && <FloatingCalculator />}
+      <DemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   );
 };

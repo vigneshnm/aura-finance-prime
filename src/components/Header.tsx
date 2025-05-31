@@ -16,7 +16,7 @@ export const Header = () => {
             </div>
             <div>
               <span className="text-xl font-bold text-white">Apex Finance AI</span>
-              <div className="text-xs text-blue-400 font-medium">AI-First Finance Platform</div>
+              <div className="text-xs text-blue-400 font-medium">Finance.AI</div>
             </div>
           </div>
 
